@@ -6,8 +6,8 @@ This docker image can be use to generate ExpressJS skeleton app without installi
 How to Use
 ----------
 ```
-$ docker pull rahit/express-generator
-$ docker run -it --user node -v $(pwd):/usr/src/app/my-app-name rahit/express-generator express --view=pug my-app-name
+$ docker pull starx/node-express-generator
+$ docker run -it --rm -v /${pwd}://usr/src/app -w /usr/src/app starx/node-express-generator:latest
 ```
 
 Suggestions &amp; PRs are welcomed!
